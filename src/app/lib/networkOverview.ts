@@ -37,7 +37,7 @@ export type NetworkOverview = {
   };
 };
 
-const DEFAULT_API_BASE = "https://Rydinex-production.up.railway.app/api";
+const DEFAULT_API_BASE = "https://backend-production-7e222.up.railway.app/api";
 const PUBLIC_API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
 const API_BASE =
   process.env.INTERNAL_API_BASE_URL ||
