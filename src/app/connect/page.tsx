@@ -30,6 +30,9 @@ export default async function ConnectPage() {
           <Link href="/" className={styles.backLink}>
             Back to Desktop Home
           </Link>
+          <Link href="/prd" className={styles.adminLink}>
+            PRD Explorer
+          </Link>
           <Link href="/admin" className={styles.adminLink}>
             Operations Console
           </Link>
@@ -79,6 +82,17 @@ export default async function ConnectPage() {
                 </li>
               ))}
             </ul>
+          </article>
+
+          <article className={styles.card}>
+            <h2>PRD Screen Explorer</h2>
+            <p>Audit which Rider, Driver, and Admin modules are already bridged into the live release surfaces.</p>
+            <Link href="/prd" className={styles.primaryAction}>
+              Open PRD Explorer
+            </Link>
+            <Link href="/admin" className={styles.secondaryAction}>
+              Continue to Admin Console
+            </Link>
           </article>
         </div>
 

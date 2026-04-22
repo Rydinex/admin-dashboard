@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { fetchNetworkOverview } from "./lib/networkOverview";
+import { prdPhaseOneHeadline } from "./lib/prdPhaseOne";
 import styles from "./page.module.css";
 
 const connectionPillars = [
@@ -112,6 +113,7 @@ export default async function HomePage() {
             <a href="#updates">PRD Updates</a>
             <a href="#airports">Airport Windows</a>
             <Link href="/connect">Connectivity Center</Link>
+            <Link href="/prd">PRD Explorer</Link>
             <Link href="/admin">Admin Console</Link>
           </nav>
         </aside>
@@ -131,6 +133,9 @@ export default async function HomePage() {
             <div className={styles.ctaRow}>
               <Link className={styles.primaryCta} href="/admin">
                 Launch Admin Dashboard
+              </Link>
+              <Link className={styles.secondaryCta} href="/prd">
+                Review PRD Coverage
               </Link>
               <Link className={styles.secondaryCta} href="/connect">
                 Open Connectivity Center
@@ -184,6 +189,8 @@ export default async function HomePage() {
               <p>PRD Integration</p>
               <h2>Latest rider, driver, and admin items now tracked in desktop view.</h2>
             </div>
+
+            <p className={styles.liveDemand}>{prdPhaseOneHeadline}</p>
 
             <div className={styles.updateGrid}>
               <article className={styles.updateCard}>
